@@ -1,37 +1,64 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Simple</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Simple and Visually Appealing Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #007BFF;
+            color: white;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Bienvenido a mi página web</h1>
-        <p>Algo sencillo y bonito</p>
+        <h1>Welcome to My Simple Website</h1>
     </header>
-
     <main>
-        <section>
-            <h2>¿Qué es esto?</h2>
-            <p>Esta es una página web básica creada solo con HTML y CSS.
-               No tiene nada complicado, solo texto, colores y un poco de diseño.</p>
-        </section>
-
-        <section>
-            <h2>Algunas cosas interesantes</h2>
-            <ul>
-                <li>Fácil de entender</li>
-                <li>Se ve bien en móvil</li>
-                <li>Sin anuncios ni cosas raras</li>
-                <li>¡Puedes cambiar lo que quieras!</li>
-            </ul>
-        </section>
+        <h2>This is a simple website</h2>
+        <p>Created using HTML, CSS, and JavaScript.</p>
+        <button onclick="displayDate()">Click me to display the date</button>
+        <p id="dateDisplay"></p>
     </main>
-
     <footer>
-        <p>© 2026 - Hecho con mucho cariño</p>
+        <p>&copy; 2026 Gabriel Mormontoy</p>
     </footer>
+    <script>
+        function displayDate() {
+            document.getElementById('dateDisplay').innerHTML = new Date().toLocaleString();
+        }
+    </script>
 </body>
 </html>
